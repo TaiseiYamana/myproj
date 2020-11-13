@@ -15,4 +15,5 @@ jobs:
       - run: gcc -o HelloWorld HelloWorld.c
       
       - store_artifacts:
+          PATH:
           destination: artifact-file

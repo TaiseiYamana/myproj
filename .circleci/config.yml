@@ -10,3 +10,14 @@ jobs:
           command: pip install numpy
       - run: 
           command: python -m unittest
+
+     docker:
+      - image: gcc:8.1.0
+      
+     steps:
+      - checkout
+      - run: gcc dump HelloWorld.c
+      
+      - store_artifacts:
+          path: /artifact/CCode
+          destination: artifact-file

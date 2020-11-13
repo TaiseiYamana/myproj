@@ -1,9 +1,10 @@
 version: 2
 jobs:
   build:
-    working_directoyr:
     docker:
-      - image: circleci/python:3.6.4
+      - image: python:3
+
     steps:
       - checkout
-      - run: Python -m unittest
+      - run: 
+          command: cd ;python -m unittest

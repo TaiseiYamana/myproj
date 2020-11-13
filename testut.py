@@ -14,5 +14,5 @@ def CROSS(A,B):
 class TestCalc(unittest.TestCase):
   def test_cross(self):
       self.assertEqual(np.cross(a, b)[0],CROSS(a,b)[0])
-      self.assertEqual(np.cross(a, b)[0],CROSS(a,b)[1])
+      self.assertEqual(np.cross(a, b)[1],CROSS(a,b)[1])
       self.assertEqual(np.cross(a, b)[2],CROSS(a,b)[2])

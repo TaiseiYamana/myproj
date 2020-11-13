@@ -7,4 +7,4 @@ jobs:
     steps:
       - checkout
       - run: 
-          command: cd ;python -m unittest
+          command: ls ; pwd ; python -m unittest

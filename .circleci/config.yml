@@ -6,3 +6,4 @@
      steps:
        - checkout
        - run: echo "Hello ,world"
+       - run: Python -m unittest

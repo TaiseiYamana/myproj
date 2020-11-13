@@ -12,7 +12,7 @@ jobs:
       - run: 
           command: python -m unittest
           
-      - run: gcc dump HelloWorld.c
+      - run: gcc -o HelloWorld HelloWorld.c
       
       - store_artifacts:
           path: /artifact/CCode

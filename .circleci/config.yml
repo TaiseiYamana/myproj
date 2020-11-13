@@ -10,7 +10,7 @@ jobs:
           command: pip install numpy
       - run: 
           command: python -m unittest
-
+    build:
      docker:
       - image: gcc:8.1.0
       

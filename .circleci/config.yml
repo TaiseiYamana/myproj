@@ -13,7 +13,7 @@ jobs:
           command: python -m unittest
           
       - run: gcc -o HelloWorld HelloWorld.c
-      
+      - rum: ls
       - run:
           command: mkdir artifacts ; mv HelloWorld artifacts/
                     

@@ -12,10 +12,11 @@ jobs:
       - run: 
           command: python -m unittest
           
-      - run: gcc -o ./artifacts/HelloWorld HelloWorld.c
+      - run: gcc -o HelloWorld HelloWorld.c
       
-      - run: 
-          command: pwd
+      - run:
+          command: mkdir artifacts ; mv HelloWorld artifacts/
+          
           
       - store_artifacts:
           PATH: ./artifacts

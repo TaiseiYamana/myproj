@@ -16,8 +16,7 @@ jobs:
       
       - run:
           command: mkdir artifacts ; mv HelloWorld artifacts/
-          
-          
+                    
       - store_artifacts:
           PATH: ./artifacts
           destination: artifact-file

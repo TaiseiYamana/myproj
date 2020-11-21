@@ -3,7 +3,7 @@ target_branch="ghp-deploy"
 git config --global user.name "CircleCI deployer"
 git config --global user.email "<>"
 git checkout $target_branch
-git reset --hard origin/main
+git reset --hard origin/master
 
 gcc -o a.out a.c
 echo "output of a.out: $(./a.out)" > a.txt

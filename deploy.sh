@@ -15,5 +15,5 @@ if [ $? -ne 0 ]; then
   exit 0
 fi
 
-git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
-git push -f origin/master $target_branch
+#git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
+git push -f origin $target_branch

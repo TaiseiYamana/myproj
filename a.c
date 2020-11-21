@@ -10,3 +10,4 @@ int fib(int i) {
 int main() {
   printf("fib(10) = %d\n", fib(10));
 }
+//

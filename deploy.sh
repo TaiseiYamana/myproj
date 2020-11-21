@@ -16,4 +16,4 @@ if [ $? -ne 0 ]; then
 fi
 
 git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
-git push -f origin $target_branch
+git push -f origin/master $target_branch

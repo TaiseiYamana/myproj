@@ -16,7 +16,13 @@ jobs:
       - run: ls
       - run:
           command: mkdir artifacts ; mv HelloWorld artifacts/
-                    
+          
+      - add_ssh_keys:
+          fingerprints:
+            - "43:45:a5:4c:25:93:0f:df:51:f4:d8:d8:f5:f3:21:94"
+
+      - run: sh ./deploy.sh
+      
       - store_artifacts:
           PATH: ./artifacts
           destination: artifact-file

@@ -14,5 +14,8 @@ if [ $? -ne 0 ]; then
   echo "nothing to commit"
   exit 0
 fi
+
+git log --graph
+
 git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
 git push -f origin $target_branch

@@ -1,5 +1,6 @@
 #!/bin/sh -ex
 target_branch="ghp-deploy"
+git branch $target_branch
 git config --global user.name "CircleCI deployer"
 git config --global user.email "<>"
 git checkout $target_branch
@@ -15,5 +16,5 @@ if [ $? -ne 0 ]; then
   exit 0
 fi
 
-#git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
+git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
 git push -f origin $target_branch

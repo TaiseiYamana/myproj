@@ -15,7 +15,5 @@ if [ $? -ne 0 ]; then
   exit 0
 fi
 
-git log --graph --all
-
 git remote set-url origin "https://github.com/TaiseiYamana/myproj.git"
 git push -f origin $target_branch

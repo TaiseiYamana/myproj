@@ -5,6 +5,8 @@ git config --global user.email "<>"
 git checkout $target_branch
 git reset --hard origin/master
 
+ls
+
 gcc -o a.out a.c
 echo "output of a.out: $(./a.out)" > a.txt
 

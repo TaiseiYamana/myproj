@@ -1,9 +1,9 @@
 #!/bin/sh -ex
-target_branch="ghp-deploy"
-git config --global user.name "CircleCI deployer"
-git config --global user.email "<>"
-git checkout $target_branch
-git reset --hard origin/master
+#target_branch="ghp-deploy"
+#git config --global user.name "CircleCI deployer"
+#git config --global user.email "<>"
+#git checkout $target_branch
+#git reset --hard origin/master
 
 ls
 
